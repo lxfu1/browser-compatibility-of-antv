@@ -1,0 +1,24 @@
+{
+  "name": "g2-browser-test",
+  "version": "1.0.0",
+  "description": "g2 browser test",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lxfu1/g2-browser-test.git"
+  },
+  "keywords": [
+    "g2",
+    "test",
+    "browser"
+  ],
+  "author": "lxfu1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lxfu1/g2-browser-test/issues"
+  },
+  "homepage": "https://github.com/lxfu1/g2-browser-test#readme"
+}
