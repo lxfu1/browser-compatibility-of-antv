@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>G2 兼容性测试文件</title>
+    <title>G2 栈兼容性测试文件</title>
     <style>
       .box {
         display: inline-block;
@@ -13,12 +13,15 @@
         border: 1px solid #ccc;
       }
     </style>
-    <script src="https://unpkg.com/@antv/g2@latest/dist/g2.min.js"></script>
+    <script src="./data.js"></script>
+    <script src="https://gw.alipayobjects.com/os/antfincdn/BYWinGQ8OP/polyfill.min.js"></script>
+    <!-- <script src="https://unpkg.com/@antv/g2@latest/dist/g2.min.js"></script> -->
   </head>
   <body>
+    <p id="content">G2</p>
     <div id="line" class="box"></div>
     <div id="bar" class="box"></div>
     <div id="point" class="box"></div>
-    <script type="text/javascript" src="./d.js"></script>
+    <script type="text/javascript" src="./chart.js"></script>
   </body>
 </html>
