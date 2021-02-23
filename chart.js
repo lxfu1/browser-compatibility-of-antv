@@ -3,7 +3,7 @@
  * @version: 0.0.1
  * @Author: fujin
  * @Date: 2021-02-23 13:57:12
- * @LastEditTime: 2021-02-23 20:52:11
+ * @LastEditTime: 2021-02-23 23:44:51
  */
 window.onload = function () {
   var urlMaps = {
@@ -22,6 +22,7 @@ window.onload = function () {
   script.onload = function () { 
     if (chartType === 'g2') { 
       document.getElementById('content').innerText = 'G2';
+      // 折线图
       var line = new G2.Chart({
         container: 'line',
         autoFit: true,
@@ -32,6 +33,7 @@ window.onload = function () {
       line.line().position('type*value');
       line.render();
     
+      // 条形图
       var bar = new G2.Chart({
         container: 'bar',
         autoFit: true,
@@ -45,7 +47,6 @@ window.onload = function () {
         showMarkers: false,
         shared: true,
       });
-
       bar
         .interval()
         .position('月份*月均降雨量')
@@ -56,11 +57,11 @@ window.onload = function () {
             marginRatio: 0,
           },
         ]);
-
       bar.interaction('active-region');
-
       bar.render();
     
+
+      // 散点图
       var point = new G2.Chart({
         container: 'point',
         autoFit: true,
@@ -71,8 +72,10 @@ window.onload = function () {
       point.render();
     } 
 
+
     if (chartType === 'g2plot') { 
       document.getElementById('content').innerText = 'G2Plot';
+      // 折线图
       var linePlot = new G2Plot.Line('line', {
         data: data,
         xField: 'type',
@@ -81,6 +84,7 @@ window.onload = function () {
       });
       linePlot.render();
 
+      // 条形图
       var barPlot = new G2Plot.Column('bar', {
         data: groupData,
         isGroup: true,
@@ -102,6 +106,8 @@ window.onload = function () {
       });
       barPlot.render();
 
+
+      // 散点图
       var scatterPlot = new G2Plot.Scatter('point', {
         data: pointData,
         xField: 'x',
