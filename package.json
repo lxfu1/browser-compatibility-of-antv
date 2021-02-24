@@ -1,5 +1,5 @@
 {
-  "name": "g2-browser-test",
+  "name": "browser-compatibility-of-antv",
   "version": "1.0.0",
   "description": "g2 browser test",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lxfu1/g2-browser-test.git"
+    "url": "git+https://github.com/lxfu1/browser-compatibility-of-antv.git"
   },
   "keywords": [
     "g2",
@@ -19,7 +19,7 @@
   "author": "lxfu1",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lxfu1/g2-browser-test/issues"
+    "url": "https://github.com/lxfu1/browser-compatibility-of-antv/issues"
   },
-  "homepage": "https://github.com/lxfu1/g2-browser-test#readme"
+  "homepage": "https://github.com/lxfu1/browser-compatibility-of-antv#readme"
 }
