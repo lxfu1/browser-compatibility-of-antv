@@ -3,7 +3,7 @@
  * @version: 0.0.1
  * @Author: fujin
  * @Date: 2021-02-23 13:57:12
- * @LastEditTime: 2021-02-24 12:11:00
+ * @LastEditTime: 2021-02-24 13:21:00
  */
 window.onload = function () {
   var currentTab = 'g2plot';
@@ -23,13 +23,9 @@ window.onload = function () {
   }
   function createScripts(chart) { 
     removeScripts();
-    var urlMaps = {
-      g2plot: 'https://unpkg.com/@antv/g2plot@latest/dist/g2plot.min.js',
-      g2: 'https://unpkg.com/@antv/g2@latest/dist/g2.min.js',
-    };
     // 动态创建 script
     var script = document.createElement('script');
-    script.src = urlMaps[chart];
+    script.src = chartUrlMaps[chart];
     script.className = 'dynamic-scripts';
     script.onload = function () {
       clear('');
