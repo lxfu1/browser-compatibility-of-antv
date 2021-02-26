@@ -1,9 +1,8 @@
 /*
- * @Descripttion: 测试线图、点图、柱图
  * @version: 0.0.1
  * @Author: fujin
  * @Date: 2021-02-23 13:57:12
- * @LastEditTime: 2021-02-26 11:25:34
+ * @LastEditTime: 2021-02-26 11:34:17
  */
 window.onload = function () {
   var currentTab = 'g2plot';
@@ -15,6 +14,7 @@ window.onload = function () {
   function clear(content) {
     $('.container').html(content);
   }
+  clear('<div class="loading">加载中...</div>');
   function createScripts(chart) {
     removeScripts();
     // 动态创建 script
@@ -32,7 +32,7 @@ window.onload = function () {
     if (e.target.innerText === currentTab) {
       return;
     }
-    $('.container').html('<div class="loading">加载中...</div>');
+    clear('<div class="loading">加载中...</div>');
     $('.chart-tab span').removeClass('active');
     $(e.target).addClass('active');
     currentTab = e.target.innerText;
