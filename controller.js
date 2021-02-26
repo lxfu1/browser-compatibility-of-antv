@@ -3,14 +3,10 @@
  * @version: 0.0.1
  * @Author: fujin
  * @Date: 2021-02-23 13:57:12
- * @LastEditTime: 2021-02-26 10:50:02
+ * @LastEditTime: 2021-02-26 11:25:34
  */
 window.onload = function () {
   var currentTab = 'g2plot';
-  var createMaps = {
-    g2plot: createG2PlotCharts,
-    g2: createG2Charts,
-  };
   // 防止个插件冲突
   function removeScripts() {
     $('.dynamic-scripts').remove();
