@@ -3,12 +3,12 @@
  * @version: 0.0.1
  * @Author: fujin
  * @Date: 2021-02-23 13:57:12
- * @LastEditTime: 2021-02-24 11:17:46
+ * @LastEditTime: 2021-02-26 10:44:48
  */
-function createG2Charts() { 
+function createG2Charts() {
   // 折线图
   var line = new G2.Chart({
-    container: 'line',
+    container: createContainer(),
     autoFit: true,
     height: 500,
     padding: [50],
@@ -19,7 +19,7 @@ function createG2Charts() {
 
   // 条形图
   var bar = new G2.Chart({
-    container: 'bar',
+    container: createContainer(),
     autoFit: true,
     padding: [50],
   });
@@ -46,11 +46,11 @@ function createG2Charts() {
 
   // 散点图
   var point = new G2.Chart({
-    container: 'point',
+    container: createContainer(),
     autoFit: true,
     padding: [50],
   });
   point.data(pointData);
   point.point().position('x*y');
-  point.render(); 
+  point.render();
 }

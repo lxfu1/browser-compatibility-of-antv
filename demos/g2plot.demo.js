@@ -3,11 +3,11 @@
  * @version: 0.0.1
  * @Author: fujin
  * @Date: 2021-02-23 13:57:12
- * @LastEditTime: 2021-02-24 11:40:52
+ * @LastEditTime: 2021-02-26 10:45:01
  */
-function createG2PlotCharts() { 
+function createG2PlotCharts() {
   // 折线图
-  var linePlot = new G2Plot.Line('line', {
+  var linePlot = new G2Plot.Line(createContainer(), {
     data: data,
     xField: 'type',
     yField: 'value',
@@ -16,7 +16,7 @@ function createG2PlotCharts() {
   linePlot.render();
 
   // 条形图
-  var barPlot = new G2Plot.Column('bar', {
+  var barPlot = new G2Plot.Column(createContainer(), {
     data: groupData,
     isGroup: true,
     xField: '月份',
@@ -38,7 +38,7 @@ function createG2PlotCharts() {
   barPlot.render();
 
   // 散点图
-  var scatterPlot = new G2Plot.Scatter('point', {
+  var scatterPlot = new G2Plot.Scatter(createContainer(), {
     data: pointData,
     xField: 'x',
     yField: 'y',
