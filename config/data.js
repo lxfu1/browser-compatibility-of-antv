@@ -1,12 +1,8 @@
-/*
- * @Descripttion: 小哥哥开始写代码了
- * @version: 0.0.1
- * @Author: fujin
- * @Date: 2021-02-23 20:43:54
- * @LastEditTime: 2021-02-23 20:59:22
+/**
+ * 存放今天数据，也可简单修改代码后使用 ajax
  */
 var data = [
-  { type: '未知', value: 654, },
+  { type: '未知', value: 654 },
   { type: '17 岁以下', value: 654 },
   { type: '18-24 岁', value: 4400 },
   { type: '25-29 岁', value: 5300 },
@@ -66,4 +62,104 @@ var pointData = [
   { x: 29, y: 6.898 },
   { x: 30, y: 7.392 },
   { x: 31, y: 6.938 },
+];
+
+// S2
+var s2Data = [
+  {
+    province: '浙江',
+    city: '杭州',
+    type: '笔',
+    price: '1',
+  },
+  {
+    province: '浙江',
+    city: '杭州',
+    type: '纸张',
+    price: '2',
+  },
+  {
+    province: '浙江',
+    city: '舟山',
+    type: '笔',
+    price: '17',
+  },
+  {
+    province: '浙江',
+    city: '舟山',
+    type: '纸张',
+    price: '6',
+  },
+  {
+    province: '吉林',
+    city: '丹东',
+    type: '笔',
+    price: '8',
+  },
+  {
+    province: '吉林',
+    city: '白山',
+    type: '笔',
+    price: '12',
+  },
+  {
+    province: '吉林',
+    city: '丹东',
+    type: '纸张',
+    price: '3',
+  },
+  {
+    province: '吉林',
+    city: '白山',
+    type: '纸张',
+    price: '25',
+  },
+  {
+    province: '浙江',
+    city: '杭州',
+    type: '笔',
+    cost: '0.5',
+  },
+  {
+    province: '浙江',
+    city: '杭州',
+    type: '纸张',
+    cost: '20',
+  },
+  {
+    province: '浙江',
+    city: '舟山',
+    type: '笔',
+    cost: '1.7',
+  },
+  {
+    province: '浙江',
+    city: '舟山',
+    type: '纸张',
+    cost: '0.12',
+  },
+  {
+    province: '吉林',
+    city: '丹东',
+    type: '笔',
+    cost: '10',
+  },
+  {
+    province: '吉林',
+    city: '白山',
+    type: '笔',
+    cost: '9',
+  },
+  {
+    province: '吉林',
+    city: '丹东',
+    type: '纸张',
+    cost: '3',
+  },
+  {
+    province: '吉林',
+    city: '白山',
+    type: '纸张',
+    cost: '1',
+  },
 ];

@@ -24,9 +24,9 @@ Browser Compatibility Testing
 
 - /demos 里面新增测试脚本
 
-- /config/map.js 内新配置测试地址
+- /config/config.js 内新配置资源地址
 
-- /index.html 新增测试 tab , xxx 和 map.js 保持一致
+- /index.html 新增测试 tab ，并引入对应 x.demo.js, xxx 和 config.js 保持一致
 
 ```html
 <div class="chart-tab">
@@ -34,6 +34,7 @@ Browser Compatibility Testing
   <span>g2</span>
   <span>xxx</span>
 </div>
+<script type="text/javascript" src="./demos/x.demo.js"></script>
 ```
 
 - 本地测试直接启动即可，线上测试走 PR 然后访问 https://lxfu1.github.io/browser-compatibility-of-antv/
