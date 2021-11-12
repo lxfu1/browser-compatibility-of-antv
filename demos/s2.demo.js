@@ -27,7 +27,7 @@ function createS2Charts() {
         name: '价格',
       },
     ],
-    data,
+    data: s2Data,
   };
 
   var s2options = {
