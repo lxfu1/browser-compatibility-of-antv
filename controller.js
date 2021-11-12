@@ -5,7 +5,24 @@
  * @LastEditTime: 2021-02-26 11:34:17
  */
 window.onload = function () {
-  var currentTab = 'g2plot';
+  function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    if (!query) {
+      return 'g2plot';
+    }
+    var vars = query.split('&');
+    for (var i = 0; i < vars.length; i++) {
+      var pair = vars[i].split('=');
+      if (pair[0] == variable && jsUrlMap[pair[1]]) {
+        return pair[1];
+      }
+    }
+    return 'g2plot';
+  }
+  var currentTab = getQueryVariable('tab');
+  $('.chart-tab span').removeClass('active');
+  $('.' + currentTab).addClass('active');
+
   // 防止个插件冲突
   function removeScripts() {
     $('.dynamic-scripts').remove();
