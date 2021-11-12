@@ -32,7 +32,8 @@ Browser Compatibility Testing
 <div class="chart-tab">
   <span class="g2plot">g2plot</span>
   <span class="g2">g2</span>
-  <span class="">xxx</span>
+  <span class="s2">s2</span>
+  <span class="xxx">xxx</span>
 </div>
 <script type="text/javascript" src="./demos/x.demo.js"></script>
 ```
