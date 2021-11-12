@@ -2,7 +2,7 @@
 var jsUrlMap = {
   g2plot: 'https://unpkg.com/@antv/g2plot@latest/dist/g2plot.min.js',
   g2: 'https://unpkg.com/@antv/g2@latest/dist/g2.min.js',
-  s2: 'https://unpkg.com/@antv/s2@@latest/dist/s2.min.js',
+  s2: 'https://unpkg.com/@antv/s2@latest/dist/s2.min.js',
 };
 
 // 静态资源地址 css
