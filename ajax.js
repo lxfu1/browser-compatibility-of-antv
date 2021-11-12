@@ -1,7 +1,7 @@
 // 格式化请求参数
 function formatParams(data) {
-  let arr = [];
-  for (let name in data) {
+  var arr = [];
+  for (var name in data) {
     arr.push(encodeURIComponent(name) + '=' + encodeURIComponent(data[name]));
   }
   arr.push(('v=' + Math.random()).replace('.', ''));
@@ -12,8 +12,8 @@ function ajax(options) {
   options.method = (options.method || 'GET').toUpperCase();
   options.dataType = options.dataType || 'json';
   options.timeout = options.timeout || 30000;
-  let params = formatParams(options.data);
-  let xhr;
+  var params = formatParams(options.data);
+  var xhr;
   if (window.XMLHttpRequest) {
     xhr = new XMLHttpRequest();
   } else if (window.ActiveObject) {
@@ -45,7 +45,7 @@ function ajax(options) {
   */
   xhr.onreadystatechange = function () {
     if (xhr.readyState == 4) {
-      let status = xhr.status;
+      var status = xhr.status;
       if ((status >= 200 && status < 300) || status == 304) {
         options.success && options.success(xhr.responseText, xhr.responseXML);
       } else {
