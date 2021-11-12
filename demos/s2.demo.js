@@ -34,7 +34,7 @@ function createS2Charts() {
     width: 600,
     height: 300,
   };
-  var s2 = new PivotSheet(createContainer(), s2DataConfig, s2options);
+  var s2 = new S2.PivotSheet(createContainer(), s2DataConfig, s2options);
 
   s2.render();
 }
