@@ -30,11 +30,11 @@ Browser Compatibility Testing
 
 ```html
 <div class="chart-tab">
-  <span class="active">g2plot</span>
-  <span>g2</span>
-  <span>xxx</span>
+  <span class="g2plot">g2plot</span>
+  <span class="g2">g2</span>
+  <span class="">xxx</span>
 </div>
 <script type="text/javascript" src="./demos/x.demo.js"></script>
 ```
 
-- 本地测试直接启动即可，线上测试走 PR 然后访问 https://lxfu1.github.io/browser-compatibility-of-antv/
+- 本地测试直接启动即可，线上测试走 PR 然后访问 https://lxfu1.github.io/browser-compatibility-of-antv/  , 可以通过 tab 参数指定选中 tab, eg: ?tab=g2
